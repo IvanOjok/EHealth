@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "233560608644",
+    "firebase_url": "https://mubsehealth-default-rtdb.firebaseio.com",
+    "project_id": "mubsehealth",
+    "storage_bucket": "mubsehealth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:233560608644:android:79b28d5b63fc0ebb3817d1",
+        "android_client_info": {
+          "package_name": "com.example.mubsehealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "233560608644-tr3et9g2f7vol9vustq18t98f1ffah17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxkmvM39ppSKpiVvsT1hZ7RR8x25EZdSs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "233560608644-tr3et9g2f7vol9vustq18t98f1ffah17.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

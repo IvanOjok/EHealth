@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".doctors.DiagnosisActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/purple_500"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_2sdp"
+                android:src="@drawable/back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/diagnosis"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_23ssp"
+                app:layout_constraintStart_toEndOf="@+id/back"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/materialButton">-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton">
+
+        <TextView
+            android:id="@+id/firstLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="@string/result"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_24ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/bg"
+            android:hint="@string/result"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_25sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/_20ssp"
+            app:layout_constraintTop_toBottomOf="@+id/firstLayout" />
+
+        <TextView
+            android:id="@+id/lastLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="@string/recommendation"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_24sdp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/date" />
+
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/bg"
+            android:hint="@string/recommendation"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_25sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/_20ssp"
+            app:layout_constraintTop_toBottomOf="@+id/lastLayout" />
+
+        <TextView
+            android:id="@+id/emailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="@string/prescription"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_24sdp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/time" />
+
+        <EditText
+            android:id="@+id/purpose"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/bg"
+            android:hint="@string/prescription"
+            android:maxLines="5"
+            android:singleLine="false"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/_20ssp"
+            app:layout_constraintTop_toBottomOf="@+id/emailLayout" />
+
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/courseLayout"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_margin="@dimen/_5sdp"-->
+        <!--                android:text="@string/course"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textSize="@dimen/_24sdp"-->
+        <!--                android:textStyle="bold"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/createEmail" />-->
+
+        <!--            <EditText-->
+        <!--                android:id="@+id/course"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="@dimen/_50sdp"-->
+        <!--                android:layout_margin="@dimen/_5sdp"-->
+        <!--                android:background="@drawable/bg"-->
+        <!--                android:hint="@string/course"-->
+        <!--                android:maxLines="1"-->
+        <!--                android:paddingLeft="@dimen/_25sdp"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textColorHint="@color/gray"-->
+        <!--                android:textSize="@dimen/_20ssp"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/courseLayout"-->
+        <!--                tools:layout_editor_absoluteX="6dp" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/stdNoLayout"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_margin="@dimen/_5sdp"-->
+        <!--                android:text="@string/studentNo"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textSize="@dimen/_24sdp"-->
+        <!--                android:textStyle="bold"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/course" />-->
+
+        <!--            <EditText-->
+        <!--                android:id="@+id/stdNo"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="@dimen/_50sdp"-->
+        <!--                android:layout_margin="@dimen/_5sdp"-->
+        <!--                android:background="@drawable/bg"-->
+        <!--                android:hint="@string/studentNo"-->
+        <!--                android:maxLines="1"-->
+        <!--                android:paddingLeft="@dimen/_25sdp"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textColorHint="@color/gray"-->
+        <!--                android:textSize="@dimen/_20ssp"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/stdNoLayout"-->
+        <!--                tools:layout_editor_absoluteX="6dp" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/pwdLayout"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_margin="@dimen/_5sdp"-->
+        <!--                android:text="@string/password"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textSize="@dimen/_24sdp"-->
+        <!--                android:textStyle="bold"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/stdNo" />-->
+
+        <!--            <EditText-->
+        <!--                android:id="@+id/password"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="@dimen/_50sdp"-->
+        <!--                android:layout_margin="@dimen/_5sdp"-->
+        <!--                android:background="@drawable/bg"-->
+        <!--                android:hint="@string/password"-->
+        <!--                android:maxLines="1"-->
+        <!--                android:paddingLeft="@dimen/_25sdp"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textColorHint="@color/gray"-->
+        <!--                android:textSize="@dimen/_20ssp"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/pwdLayout"-->
+        <!--                tools:layout_editor_absoluteX="6dp" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/confirmLayout"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_margin="@dimen/_5sdp"-->
+        <!--                android:text="@string/confirm"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textSize="@dimen/_24sdp"-->
+        <!--                android:textStyle="bold"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/password" />-->
+
+        <!--            <EditText-->
+        <!--                android:id="@+id/confirmPassword"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="@dimen/_50sdp"-->
+        <!--                android:layout_margin="@dimen/_5sdp"-->
+        <!--                android:background="@drawable/bg"-->
+        <!--                android:hint="@string/confirm"-->
+        <!--                android:maxLines="1"-->
+        <!--                android:paddingLeft="@dimen/_25sdp"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textColorHint="@color/gray"-->
+        <!--                android:textSize="@dimen/_20ssp"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/confirmLayout"-->
+        <!--                tools:layout_editor_absoluteX="6dp" />-->
+
+
+        <Button
+            android:id="@+id/create"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/bg"
+            android:text="@string/approve"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            android:lines="5"
+            app:icon="@drawable/next"
+            app:iconGravity="end"
+            app:iconSize="@dimen/_30sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/purpose"
+            app:layout_constraintVertical_bias="0.327" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55sdp"
+            app:layout_constraintTop_toBottomOf="@+id/create" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--    </ScrollView>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">MUBS EHealth</string>
+    <string name="ehealth">E-Health System</string>
+    <string name="studentNo">Student No.</string>
+    <string name="password">Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm">Confirm Password</string>
+    <string name="login">Login</string>
+    <string name="account">Have no Account? Create One </string>
+    <string name="create">Create Account</string>
+    <string name="forgot">Forgot Password</string>
+    <string name="reset">Reset Password</string>
+    <string name="my_account">My Account</string>
+
+    <string name="no">12345.</string>
+    <string name="first">First name</string>
+    <string name="last">Last Name</string>
+    <string name="phone">Phone Number</string>
+    <string name="mobile_money">Mobile Money Number</string>
+    <string name="email">Email</string>
+    <string name="gender">Gender</string>
+    <string name="course">Course</string>
+
+    <string name="service">Services</string>
+    <string name="select">Select Doctor</string>
+    <string name="reserve">Reservations</string>
+    <string name="reservation">Reservation</string>
+    <string name="consult">Consultations</string>
+    <string name="doctors">Doctors</string>
+    <string name="student">Students</string>
+    <string name="dNo">Doctor/Nurse No.</string>
+    <string name="prof">Profession</string>
+    <string name="next">NEXT</string>
+    <string name="add">A</string>
+    <string name="addD">Add Doctor</string>
+
+    <string name="c_reserve">Create Reservation</string>
+    <string name="purpose">Purpose</string>
+    <string name="date">Select Date</string>
+    <string name="time">Select time</string>
+    <string name="recent">Recent Diagnosis</string>
+
+    <string name="logout">Log Out</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="result">Results</string>
+    <string name="recommendation">Recommendation</string>
+    <string name="prescription">Prescription</string>
+    <string name="approve">Approve Report</string>
+    <string name="approved">Approved Reports</string>
+    <string name="report">Diagnosis Report</string>
+    
+    <string name="edit">Edit Profile</string>
+
+</resources>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddDoctor">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/purple_500"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_2sdp"
+                android:src="@drawable/back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/addD"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_23ssp"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:tint="@color/blue"
+                    android:src="@drawable/ic_baseline_account_circle_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/firstLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:text="@string/first"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_24ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img" />
+
+                <EditText
+                    android:id="@+id/first"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/bg"
+                    android:hint="@string/first"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintTop_toBottomOf="@+id/firstLayout" />
+
+                <TextView
+                    android:id="@+id/lastLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:text="@string/last"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_24sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/first" />
+
+                <EditText
+                    android:id="@+id/last"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/bg"
+                    android:hint="@string/last"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintTop_toBottomOf="@+id/lastLayout" />
+
+                <TextView
+                    android:id="@+id/emailLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:text="@string/email"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_24sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/last" />
+
+                <EditText
+                    android:id="@+id/createEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/bg"
+                    android:hint="@string/email"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintTop_toBottomOf="@+id/emailLayout" />
+
+
+                <TextView
+                    android:id="@+id/courseLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:text="@string/prof"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_24sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/createEmail" />
+
+                <EditText
+                    android:id="@+id/profession"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/bg"
+                    android:hint="@string/prof"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintTop_toBottomOf="@+id/courseLayout"
+                    tools:layout_editor_absoluteX="6dp" />
+
+                <TextView
+                    android:id="@+id/stdNoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:text="@string/dNo"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_24sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/profession" />
+
+                <EditText
+                    android:id="@+id/dNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/bg"
+                    android:hint="@string/dNo"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintTop_toBottomOf="@+id/stdNoLayout"
+                    tools:layout_editor_absoluteX="6dp" />
+
+                <TextView
+                    android:id="@+id/pwdLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:text="@string/phone"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_24sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/dNo"
+                    tools:layout_editor_absoluteX="6dp" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/bg"
+                    android:hint="@string/phone"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintTop_toBottomOf="@+id/pwdLayout"
+                    tools:layout_editor_absoluteX="6dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/add"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/bg"
+                    android:text="@string/next"
+                    android:textSize="@dimen/_18ssp"
+                    app:icon="@drawable/next"
+                    app:iconGravity="end"
+                    app:iconSize="@dimen/_30sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/add" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
